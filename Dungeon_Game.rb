@@ -48,8 +48,7 @@ end
 # Create the main dungeon object
 my_dungeon = Dungeon.new("Steve Rogers")
 # Add rooms to the dungeon
-my_dungeon.add_room(:largecave, "Large Cave", "a large cavernous cave", { ➥
-:west => :smallcave })
-my_dungeon.add_room(:smallcave, "Small Cave", "a small, claustrophobic cave", { ➥ :east => :largecave })
+my_dungeon.add_room(:largecave, "Large Cave", "a large cavernous cave", {:west => :smallcave })
+my_dungeon.add_room(:smallcave, "Small Cave", "a small, claustrophobic cave", {:east => :largecave })
 # Start the dungeon by placing the player in the large cave
 my_dungeon.start(:largecave)
